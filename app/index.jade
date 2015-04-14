@@ -1,0 +1,129 @@
+
+extends layouts/default
+block content
+    .main-title
+        h2 Ты сегодня покормил кота?
+    #cat-block
+        .cat-box#fua_gra
+            .cat-box-wrap.blue(data-choose="fua_gra")
+                .cat-box-block-top
+                    .cat-block-blue
+                    .cat-block-white
+                .cat-box-block
+                    .cat-box-content
+                        p.cat-box-pretitle Сказочное заморское яство
+                        h3.cat-box-title Нямушка
+                        h4.cat-box-dish
+                            | c&nbsp
+                            span.food-type=dishes.fua_gra.name
+
+                        .info-block
+                            p.items
+                                span.item-count 10
+                                |&nbsp
+                                | порций
+                            p.present
+                                //span.mouse-count
+                                //| &nbsp
+                                span.mice мышь
+                                | &nbsp
+                                span.present-word в подарок
+                    .cat-image
+                    .weight-ellipse
+                        p.item-weight= dishes.fua_gra.weight
+                        p.weight-value кг
+            .cat-box-text(data-oldText="fua_gra")
+                p
+                | Чего сидишь? Порадуй котэ,
+                | &nbsp
+                a(href="javascript:void(0)", data-choose="fua_gra") купи.
+            .cat-box-choosed-text(data-newText="fua_gra")
+                p= dishes.fua_gra.text
+            .cat-box-disabled-text
+                p
+                | Печалька с &nbsp
+                span= dishes.fua_gra.name
+                |&nbsp закончился
+        .cat-box#fish
+            .cat-box-wrap.blue(data-choose="fish")
+                .cat-box-block-top
+                    .cat-block-blue
+                    .cat-block-white
+                .cat-box-block
+                    .cat-box-content
+                        p.cat-box-pretitle Сказочное заморское яство
+                        h3.cat-box-title Нямушка
+                        h4.cat-box-dish
+                            | c&nbsp
+                            span.food-type=dishes.fish.name
+
+                        .info-block
+                            p.items
+                                span.item-count 40
+                                | &nbsp
+                                | порций
+                            p.present
+                                span.mouse-count 2
+                                | &nbsp
+                                span.mice мыши
+                                | &nbsp
+                                span.present-word в подарок
+                    .cat-image
+                    .weight-ellipse
+                        p.item-weight= dishes.fish.weight
+                        p.weight-value кг
+            .cat-box-text(data-oldText="fish")
+                p
+                | Чего сидишь? Порадуй котэ,
+                | &nbsp
+                a(href="javascript:void(0)", data-choose="fish") купи.
+            .cat-box-choosed-text(data-newText="fish")
+                p= dishes.fish.text
+            .cat-box-disabled-text
+                p
+                | Печалька с &nbsp
+                span= dishes.fish.name
+                | &nbsp закончился
+
+        .cat-box#chicken.disabled
+            .cat-box-wrap
+                .cat-box-block-top
+                    .cat-block-blue
+                    .cat-block-white
+                .cat-box-block
+                    .cat-box-content
+                        p.cat-box-pretitle Сказочное заморское яство
+                        h3.cat-box-title Нямушка
+                        h4.cat-box-dish
+                            | c&nbsp
+                            span= dishes.chicken.name
+
+                        .info-block
+                            p.items
+                                span.item-count 100
+                                | &nbsp
+                                | порций
+                            p.present
+                                span.mouse-count= dishes.chicken.weight
+                                | &nbsp
+                                span.mice мышей
+                                | &nbsp
+                                span.present-word в подарок
+                            p.respect заказчик доволен
+                    .cat-image
+                    .weight-ellipse
+                        p.item-weight= dishes.chicken.weight
+                        p.weight-value кг
+            .cat-box-text
+                p
+                | Чего сидишь? Порадуй котэ,
+                | &nbsp
+                a(href="javascript:void(0)") купи.
+            .cat-box-choosed-text
+                p= dishes.chicken.text
+            .cat-box-disabled-text
+                p
+                | Печалька с &nbsp
+                span= dishes.chicken.name
+                | &nbsp закончился
+

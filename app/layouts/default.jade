@@ -1,0 +1,37 @@
+- var dishes = {"fua_gra":{"name": "фуагра", "text": "Печень утки разварная с артишоками.","weight": "0,5"},"fish":{"name": "рыбой", "text": "Головы щучьи с чесноком да свежайшая сёмгушка.","weight": "2"}, "chicken":{"name": "курой", "text": "Филе из цыплят с трюфелями в бульоне.","weight": "5"}}
+
+doctype html
+html.no-js
+    head
+        meta(charset='utf-8')
+        title Test Fun Box
+        meta(name='description' content='')
+        meta(name='viewport' content='width=device-width, initial-scale=1')
+        // Place favicon.ico and apple-touch-icon.png in the root directory
+        // build:css styles/vendor.css
+        // bower:css
+        link(rel='stylesheet' href='../bower_components/normalize.css/normalize.css')
+        // endbower
+        // endbuild
+        // build:css styles/main.css
+        link(rel='stylesheet' href='styles/main.css')
+        link(rel='stylesheet' href='styles/media.css')
+        // endbuild
+    body
+        | <!--[if lt IE 10]>
+        |   <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        | <![endif]-->
+        #wrap-block
+            block content
+        // Google Analytics: change UA-XXXXX-X to be your site's ID.
+        // build:js scripts/vendor.js
+        // bower:js
+        script(src='../bower_components/jquery/dist/jquery.js')
+        // endbower
+        // endbuild
+        // build:js scripts/plugins.js
+        // endbuild
+        // build:js scripts/main.js
+        script(src='scripts/choose_box.js')
+        script(src='scripts/hover_state.js')
+        // endbuild

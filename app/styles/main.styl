@@ -1,0 +1,193 @@
+/*mixins*/
+@import 'mixins.styl'
+/*vars*/
+@import 'vars.styl'
+/*extended classes*/
+@import 'choosed.styl'
+@import 'disabled.styl'
+@import 'blue_state_hover.styl'
+
+
+@font-face
+  font-family: Exo
+  src: url(../fonts/exo.ttf)
+a
+  color: _blue
+  text-decoration: none
+  border-bottom: 1px dashed
+  &:hover
+    border-bottom: none
+body
+  background: url('../images/back_sprite.jpg') repeat
+  color: #fff
+  font-family 'trebuchet ms', Helvetica
+#cat-block
+  position: absolute
+  margin: auto
+  width: 1280px
+  top: 50%
+  left: 50%
+  transform(translate(-50%,-50%))
+.cat-box
+  width: 320px
+  display: inline-block
+  vertical-align: top
+  margin-left: 80px
+.cat-image
+  position: absolute
+  width: 100%
+  min-height: 100%
+  background-image url('../images/cat.png')
+  background-repeat: no-repeat
+  background-position: -25px 180px
+  bottom: 0
+  right: 1px
+  border-radius(12px)
+.cat-box-wrap
+  cursor: pointer;
+  overflow: hidden
+.main-title
+  text-align: center
+.cat-box-wrap
+  width: 320px
+.cat-box-content
+  position: relative
+  bottom: 15px
+.cat-box-block
+  position: relative
+  border-top none
+  cat-box-border(4px solid _blue)
+  padding-left: 45px
+  background-color: #fff
+  width: 267px
+  height: 440px;
+  border-radius(0px 0px 12px 12px)
+
+.cat-box-block-top
+  top: 1px
+  border-left: 4px solid transparent
+  border-right: 4px solid _blue
+  position: relative
+  right: 4px
+  overflow hidden
+  width: 316px;
+  height: 40px;
+  border-radius(0px 12px 0px 0px)
+.cat-block-white
+  border-top: 4px solid _blue
+  right: 225px
+  width: 700px
+  height: 500px;
+  position: relative
+  background: #fff
+  top: 10px
+  transform(rotate(-40deg))
+.cat-block-blue
+  left: 47px
+  position: absolute;
+  width: 272px
+  height: 4px
+  background: _blue
+  z-index: 5
+
+.cat-box-dish
+  margin: 0px 0px 15px 0px
+  color: #000
+  font-size 24px
+  font-weight: 700
+.info-block
+  font-size 14px
+  color: _text_grey
+  & p
+    margin: 0
+.weight-ellipse
+  text-align: center
+  position: absolute
+  top: 340px
+  left: 218px
+  width: 81px;
+  height: 81px;
+  border-radius(41px)
+  background-color: #1698d9;
+.item-count
+  font-weight: 700
+  font-size: 14px
+h2
+  color: _white
+  font-family: Exo
+  font-weight normal
+  font-size 36px
+.cat-box-pretitle
+  margin: 0
+  font-size 16px
+  color: _text_grey
+.cat-box-title
+  margin: 5px 0 0 0
+  color: #000
+  font-size: 48px
+  font-weight: 700
+.cat-box-text
+  text-align: center
+  font-size: 13px
+.cat-box-choosed-text
+  @extend .cat-box-text
+  display none
+  & p
+    margin-bottom: 0
+.cat-box-disabled-text
+  @extend .cat-box-choosed-text
+  color: _yellow
+  & p
+    margin-bottom: 0
+
+.item-weight
+  line-height: 22px
+  font-size: 42px
+  margin: 22px 0 0 0
+.weight-value
+  font-size 21px
+  margin: 6px 0 0 0
+.pink-text
+  color: _hover_pink
+
+@media all and (max-width: 1280px)
+  #cat-block
+    width: 1024px
+  .cat-box
+    margin-left: 1.7%
+@media all and (max-width: 1024px)
+  #cat-block
+    position: relative
+    width: 800px
+    top: 0
+    left: 0
+    transform(translate(0, 0))
+
+  .cat-box
+    margin-bottom: 10px
+    &:first-child
+      display: block
+      margin-left: auto
+      margin-right: auto
+    &:nth-child(2)
+      margin-left: 10%
+
+@media all and (max-width: 480px)
+  .cat-box
+    display: block
+    &:first-child
+      display: block
+      margin-left: auto
+      margin-right: auto
+    &:nth-child(2)
+      display: block
+      margin-left: auto
+      margin-right: auto
+
+#cat-block
+    width: 320px
+    margin-left: auto
+    margin-right: auto
+
+
+
