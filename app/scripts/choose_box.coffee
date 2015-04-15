@@ -17,7 +17,7 @@ div_check = (div, old, nu) ->
 
 
 div_search = (s)->
-  n_div = $(".cat-box-wrap[data-choose='#{s}']")
+  n_div = $(".cat-box-wrap[data-wrap='#{s}']")
   old_text = $(".cat-box-text[data-oldText='#{s}']")
   new_text = $(".cat-box-choosed-text[data-newText='#{s}']")
 

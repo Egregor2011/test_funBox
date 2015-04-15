@@ -13,5 +13,5 @@ hover_state_out = ->
     $(this).find('.cat-box-pretitle').removeClass('pink-text')
 
 
-$('[data-choose]').mouseenter(hover_state_in)
-$('[data-choose]').mouseleave(hover_state_out)
+$('[data-wrap]').mouseenter(hover_state_in)
+$('[data-wrap]').mouseleave(hover_state_out)

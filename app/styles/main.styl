@@ -21,7 +21,7 @@ body
   background: url('../images/back_sprite.jpg') repeat
   color: #fff
   font-family 'trebuchet ms', Helvetica
-#cat-block
+#wrap-block
   position: absolute
   margin: auto
   width: 1280px
@@ -44,7 +44,6 @@ body
   right: 1px
   border-radius(12px)
 .cat-box-wrap
-  cursor: pointer;
   overflow: hidden
 .main-title
   text-align: center
@@ -54,6 +53,7 @@ body
   position: relative
   bottom: 15px
 .cat-box-block
+  cursor: pointer;
   position: relative
   border-top none
   cat-box-border(4px solid _blue)
@@ -74,6 +74,7 @@ body
   height: 40px;
   border-radius(0px 12px 0px 0px)
 .cat-block-white
+  cursor: pointer
   border-top: 4px solid _blue
   right: 225px
   width: 700px
@@ -151,12 +152,12 @@ h2
   color: _hover_pink
 
 @media all and (max-width: 1280px)
-  #cat-block
+  #wrap-block
     width: 1024px
   .cat-box
     margin-left: 1.7%
 @media all and (max-width: 1024px)
-  #cat-block
+  #wrap-block
     position: relative
     width: 800px
     top: 0
@@ -184,10 +185,10 @@ h2
       margin-left: auto
       margin-right: auto
 
-#cat-block
-    width: 320px
-    margin-left: auto
-    margin-right: auto
+  #wrap-block
+      width: 320px
+      margin-left: auto
+      margin-right: auto
 
 
 

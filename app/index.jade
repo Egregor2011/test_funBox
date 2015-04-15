@@ -5,11 +5,11 @@ block content
         h2 Ты сегодня покормил кота?
     #cat-block
         .cat-box#fua_gra
-            .cat-box-wrap.blue(data-choose="fua_gra")
+            .cat-box-wrap.blue(data-wrap="fua_gra")
                 .cat-box-block-top
                     .cat-block-blue
-                    .cat-block-white
-                .cat-box-block
+                    .cat-block-white(data-choose="fua_gra")
+                .cat-box-block(data-choose="fua_gra")
                     .cat-box-content
                         p.cat-box-pretitle Сказочное заморское яство
                         h3.cat-box-title Нямушка
@@ -45,11 +45,11 @@ block content
                 span= dishes.fua_gra.name
                 |&nbsp закончился
         .cat-box#fish
-            .cat-box-wrap.blue(data-choose="fish")
+            .cat-box-wrap.blue(data-wrap="fish")
                 .cat-box-block-top
                     .cat-block-blue
-                    .cat-block-white
-                .cat-box-block
+                    .cat-block-white(data-choose="fish")
+                .cat-box-block(data-choose="fish")
                     .cat-box-content
                         p.cat-box-pretitle Сказочное заморское яство
                         h3.cat-box-title Нямушка
