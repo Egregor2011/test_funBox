@@ -12,7 +12,7 @@ gulp.task('styles', function () {
            paths: ['.']
           }))
          .pipe($.postcss([
-            require('autoprefixer-core')({browsers: ['last 1 version']})
+            require('autoprefixer-core')({browsers: ['last 2 version']})
           ]))
     .pipe(gulp.dest('.tmp/styles'));
 });
